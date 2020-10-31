@@ -1,0 +1,22 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #101010;
+}
+
+h1 {
+    font-family: sans-serif;
+    color: #cccccc;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#map {
+    background-color: #505050;
+    border: 1px solid #505050;
+}
