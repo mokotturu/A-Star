@@ -96,7 +96,7 @@ function search(grid, start, goal) {
             let gScoreIsBest = false;
 
             if (openList.indexOf(neighbour) == -1) {
-                // This is the first time we habe arrived at this node, so it must be the best
+                // This is the first time we have arrived at this node, so it must be the best
                 // Also, we need to take the h (heuristic) score since we haven't done so yet
                 gScoreIsBest = true;
                 neighbour.h = heuristic(neighbour, goal);
@@ -145,7 +145,6 @@ function findNeighbours(grid, node) {
     if (!(y - 1 < 0)) {
         ret.push(grid[x][y - 1]);
     }
-    console.log(x, y)
     if (!(x + 1 > grid.length - 1)) {
         ret.push(grid[x + 1][y]);
     }
