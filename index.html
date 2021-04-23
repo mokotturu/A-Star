@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="author" content="Monish Reddy Kotturu">
-        <title>A* Simulation</title>
-        <link rel="stylesheet" href="css/desktop.css"/>
-    </head>
+	<head>
+		<meta name="author" content="Monish Reddy Kotturu">
+		<title>A* Simulation</title>
+		<link rel="stylesheet" href="css/desktop.css"/>
+	</head>
 
-    <body>
-        <div class="page-container">
-            <h1>A* Simulation</h1>
-            <canvas width="500" height="500" id="map"></canvas>
-        </div>
+	<body>
+		<div class="page-container">
+			<div class="about">
+				<h1>A* Simulation</h1>
+				<p>The map configuration and the start/goal positions are randomized with each page refresh.</p>
+				<ul>
+					<li>Dark grey cells represent walls/obstacles</li>
+					<li>Light grey cells represent searchable space</li>
+					<li>Blue cell represents the start position of the robot</li>
+					<li>Green cell represents the goal position</li>
+				</ul>
+			</div>
+			<canvas width="500" height="500" id="map"></canvas>
+		</div>
 
-        <script type="text/javascript" src="js/a-star.js"></script>
-    </body>
+		<script type="text/javascript" src="js/a-star.js"></script>
+	</body>
 </html>
